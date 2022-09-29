@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/item_main_menu"
+            android:title="메인 메뉴" />
+
+    </group>
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/item_gps"
+            android:title="위치 추적" />
+
+        <item
+            android:id="@+id/item_stat"
+            android:title="통계" />
+
+        <item
+            android:id="@+id/item_general"
+            android:title="자유게시판" />
+
+        <item
+            android:id="@+id/item_rank"
+            android:title="순위" />
+
+    </group>
+
+</menu>

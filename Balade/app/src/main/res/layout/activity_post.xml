@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2b2b2b"
+    tools:context=".route.PostActivity">
+
+    <TextView
+        android:id="@+id/post_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="제목: "
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/post_tv_route"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="태그 "
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_tv_title" />
+
+    <EditText
+        android:id="@+id/post_et_title"
+        android:layout_width="257dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/boarder"
+        android:ems="10"
+        android:hint="제목을 입력하세요"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Spinner
+        android:id="@+id/post_sp_route"
+        android:layout_width="257dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="36dp"
+        android:background="#2b2b2b"
+        android:popupBackground="#2b2b2b"
+        app:layout_constraintBottom_toTopOf="@+id/post_et_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_et_title"
+        app:layout_constraintVertical_bias="0.218"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/post_et_content"
+        android:layout_width="368dp"
+        android:layout_height="398dp"
+        android:background="@drawable/edittext_border"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="내용을 입력하세요"
+        android:inputType="textMultiLine"
+        android:maxLength="@integer/material_motion_duration_long_1"
+        android:scrollHorizontally="false"
+        android:singleLine="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.576" />
+
+    <TextView
+        android:id="@+id/post_tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="내용 "
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/post_et_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_tv_route"
+        app:layout_constraintVertical_bias="0.641" />
+
+    <Button
+        android:id="@+id/post_btn_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="글 쓰기"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/post_et_content"
+        app:layout_constraintVertical_bias="0.537" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

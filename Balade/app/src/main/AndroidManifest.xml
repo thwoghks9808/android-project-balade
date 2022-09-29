@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bit.balade">
+    <!-- 인터넷 권한 선언 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- gps 권한 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/full"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/full"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Balade"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".RankingActivity.RankView"
+            android:exported="false" />
+        <activity
+            android:name=".route.BoardView"
+            android:exported="false" />
+        <activity
+            android:name=".route.PostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".route.route"
+            android:exported="false" />
+        <activity
+            android:name=".Statistics.StatActivity"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDoibot_Lmwzb54mjMtFp3jS8NT_bfZyvI" />
+
+        <activity
+            android:name=".GpsActivity.GpsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_gps" />
+        <activity
+            android:name=".Lost"
+            android:exported="false" />
+        <activity
+            android:name=".register"
+            android:exported="false" />
+        <activity
+            android:name=".Menu"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
