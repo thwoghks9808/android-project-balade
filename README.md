@@ -8,4 +8,5 @@ you can check how much you walked or how long you've walked, share information w
 
 
 this application was created for my final team project on 3 month education course.  
+I was responsible for Android Delvelopment so server is not included in this repository
 connection to server was done with Retrofit2 so if someone is willing to use this code, got to be careful on connection part
