@@ -1,6 +1,6 @@
 # android-project-balade
 
-###GPS Location Service App Client
+### GPS Location Service App Client
 
 Balade means walk in French. The reason for this name is that I felt word Hiking or Climbing is kind of too heavy  
 "Balade" is Location Tracking Service using GPS Signals and network location.  
